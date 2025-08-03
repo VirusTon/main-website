@@ -34,7 +34,7 @@
       background-color: #007bff;  
       color: white;  
       border: none;
-      width: 50%;
+      width: 40%;
     }  
     #status {  
       margin-top: 1rem;  
@@ -43,8 +43,15 @@
   </style>  
 </head>  
 <body>
+  
+  <div class="container">  
+    <h2>تسجيل الدخول / إنشاء حساب</h2>  
+    <input type="text" id="userId" placeholder="معرّف المستخدم (ID)">  
+    <input type="password" id="password" placeholder="كلمة المرور">  
+    <button onclick="loginOrRegister()">دخول</button>  
+    <div id="status"></div>
 
-  <!-- إعلان -->
+    <!-- إعلان -->
   <div style="text-align:center; margin: 10px 0;">
     <script type="text/javascript">
       atOptions = {
@@ -56,14 +63,8 @@
       };
     </script>
     <script type="text/javascript" src="//www.highperformanceformat.com/637282bc26477d3191a82e2037188c44/invoke.js"></script>
-  </div>
-  
-  <div class="container">  
-    <h2>تسجيل الدخول / إنشاء حساب</h2>  
-    <input type="text" id="userId" placeholder="معرّف المستخدم (ID)">  
-    <input type="password" id="password" placeholder="كلمة المرور">  
-    <button onclick="loginOrRegister()">دخول</button>  
-    <div id="status"></div>  
+  </div> <!-- نهاية الإعلان هنا -->
+    
   </div>  
   
   <script>  
