@@ -1,248 +1,107 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>كلمات اليوم - Binance</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
-    :root {
-      --bg: #ffffff;
-      --text: #000000;
-      --box: #f0f0f0;
-      --btn-bg: #e0e0e0;
-    }
-
-    [data-theme="dark"] {
-      --bg: #121212;
-      --text: #f5f5f5;
-      --box: #1e1e1e;
-      --btn-bg: #2a2a2a;
-    }
-
-    body {
-      margin: 0;
-      padding: 20px;
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: 'Courier Prime', monospace;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .box {
-      background: var(--box);
-      padding: 20px;
-      border-radius: 10px;
-      white-space: pre-wrap;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .buttons a {
-      background: var(--btn-bg);
-      color: var(--text);
-      padding: 10px 15px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-
-    .buttons a:hover {
-      background: #ff1a1a;
-      color: white;
-    }
-
-    .ad-banner {
-      text-align: center;
-      margin: 20px 0;
-      background: #ccc;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    /* Theme selector */
-    .theme-selector {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    select {
-      padding: 8px 12px;
-      border-radius: 6px;
-      border: 1px solid #888;
-      background: var(--btn-bg);
-      color: var(--text);
-    }
-  </style>
-</head>
-<body>
-
-<div class="container">
-
-  <!-- Adsterra Banner Ad Top -->
-<div style="text-align:center; margin: 10px 0;">
-  <script type="text/javascript">
-    atOptions = {
-      'key' : '1f5b93cb89544daaeb3da0e529d678bf',
-      'format' : 'iframe',
-      'height' : 90,
-      'width' : 728,
-      'params' : {}
-    };
-  </script>
-  <script type="text/javascript" src="//www.highperformanceformat.com/1f5b93cb89544daaeb3da0e529d678bf/invoke.js"></script>
-</div>
-
-  <!-- اختيار الوضع -->
-  <div class="theme-selector">
-    <label for="theme">الوضع:</label>
-    <select id="theme">
-      <option value="auto">🌓 تلقائي</option>
-      <option value="light">🌞 نهار</option>
-      <option value="dark">🌙 ليلي</option>
-    </select>
-  </div>
-
-  <!-- الكلمات -->
-  <div class="box">
-حل كلمة اليوم لتاريخ 2025/07/28
-
-🛜8
-STRATEGY
-INTEREST
-EVALUATE
-POSITION
-ANALYSIS
-OPTIMIZE
-LEVERAGE
-
-🛜7
-COMPLEX
-HISTORY
-PROFITS
-AVERAGE
-SETTING
-
-🛜6
-PROFIT
-BORROW
-ADJUST
-RETURN
-MARGIN
-
-🛜5
-ENTRY
-QUOTE
-TOKEN
-FUNDS
-RANGE
-LEVEL
-SHORT
-TRADE
-PRICE
-HEDGE
-
-🛜4
-LONG
-TOOL
-RISK
-SELL
-PAIR
-COST
-SALE
-
-🛜3
-ROI
-BUY
-APR
-FEE
-KEY
-  </div>
+<!DOCTYPE html>  
+<html lang="ar">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+  <title>نقطة بلس | تسجيل الدخول</title>  
+  <style>  
+    body {  
+      direction: rtl;  
+      font-family: Arial, sans-serif;  
+      background: #f7f7f7;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      height: 100vh;  
+    }  
+    .container {  
+      background: white;  
+      padding: 2rem;  
+      border-radius: 16px;  
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+      width: 90%;  
+      max-width: 400px;  
+    }  
+    input, button {  
+      width: 100%;  
+      padding: 1rem;  
+      margin: 0.5rem 0;  
+      font-size: 1rem;  
+      border-radius: 8px;  
+      border: 1px solid #ccc;  
+    }  
+    button {  
+      background-color: #007bff;  
+      color: white;  
+      border: none;  
+    }  
+    #status {  
+      margin-top: 1rem;  
+      color: green;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <h2>تسجيل الدخول / إنشاء حساب</h2>  
+    <input type="text" id="userId" placeholder="معرّف المستخدم (ID)">  
+    <input type="password" id="password" placeholder="كلمة المرور">  
+    <button onclick="loginOrRegister()">دخول</button>  
+    <div id="status"></div>  
+  </div>  
   
-  <!-- إعلان قبل الأزرار -->
-  <div style="text-align:center; margin: 10px 0;">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : '637282bc26477d3191a82e2037188c44',
-        'format' : 'iframe',
-        'height' : 50,
-        'width' : 320,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/637282bc26477d3191a82e2037188c44/invoke.js"></script>
-  </div>
+  <script>  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwsfve3uGNbKhZM15VdakGcbmMLwOyZ3CrUQ3aKpzRjM_FRFVfb9NbPrR524dpITBhN/exec';  
   
-  <!-- الأزرار -->
-  <div class="buttons">
-    <a href="https://earn-pepe.com/?ref=Fydc">ربح PEPE مجانا 🆓</a>
-    <a href="https://app.binance.com/uni-qr/Dtdk2TMy?utm_medium=web_share_copy">ظرف أحمر 🧧</a>
-    <a href="https://app.binance.com/uni-qr/Qe3GyPAW?utm_medium=web_share_copy">0.001$</a>
-    <a href="https://t.me/X730X/365">بوت ربح 💰</a>
-    <a href="https://i.mec.me/?c=7vl9l6s5">ربح عملة MEC 📲</a>
-    <a href="https://t.me/X730X/373">تطبيق دنانير كاش</a>
-  </div>
-
-  <!-- Adsterra Banner Ad Bottom -->
-<div style="text-align:center; margin: 20px 0;">
-  <script type="text/javascript">
-    atOptions = {
-      'key' : '1f5b93cb89544daaeb3da0e529d678bf',
-      'format' : 'iframe',
-      'height' : 90,
-      'width' : 728,
-      'params' : {}
-    };
-  </script>
-  <script type="text/javascript" src="//www.highperformanceformat.com/1f5b93cb89544daaeb3da0e529d678bf/invoke.js"></script>
-</div>
-
-</div>
-
-<script>
-  const themeSelect = document.getElementById('theme');
-  const root = document.documentElement;
-
-  function applyTheme(mode) {
-    if (mode === 'auto') {
-      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      root.setAttribute('data-theme', systemDark ? 'dark' : 'light');
-    } else {
-      root.setAttribute('data-theme', mode);
-    }
-  }
-
-  themeSelect.addEventListener('change', () => {
-    const mode = themeSelect.value;
-    localStorage.setItem('themeMode', mode);
-    applyTheme(mode);
-  });
-
-  // تحميل الوضع المختار سابقًا
-  const savedMode = localStorage.getItem('themeMode') || 'auto';
-  themeSelect.value = savedMode;
-  applyTheme(savedMode);
-
-  // في حال تغير وضع النظام أثناء "تلقائي"
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (themeSelect.value === 'auto') {
-      applyTheme('auto');
-    }
-  });
-</script>
-
-</body>
+    async function loginOrRegister() {  
+      const userId = document.getElementById('userId').value.trim();  
+      const password = document.getElementById('password').value.trim();  
+      const status = document.getElementById('status');  
+  
+      if (!userId || !password) {  
+        status.style.color = 'red';  
+        status.innerText = 'يرجى إدخال معرف وكلمة مرور.';  
+        return;  
+      }  
+  
+      status.innerText = '...جارٍ التحقق';  
+  
+      const params = new URLSearchParams();  
+      params.append("action", "loginOrRegister");  
+      params.append("id", userId);  
+      params.append("password", password);  
+  
+      try {  
+        const res = await fetch(`${scriptURL}?${params.toString()}`);  
+        const result = await res.json();  
+  
+        if (result.status === "login_success") {  
+          status.style.color = 'green';  
+          status.innerText = 'تم تسجيل الدخول بنجاح ✅';  
+          // تخزين الجلسة مؤقتًا  
+          localStorage.setItem("userId", userId);  
+          localStorage.setItem("password", password);  
+          // الانتقال للواجهة التالية  
+          setTimeout(() => {  
+            window.location.href = "dashboard.html";  
+          }, 1000);  
+        } else if (result.status === "register_success") {  
+          status.style.color = 'blue';  
+          status.innerText = 'تم إنشاء الحساب بنجاح 🎉';  
+          localStorage.setItem("userId", userId);  
+          localStorage.setItem("password", password);  
+          setTimeout(() => {  
+            window.location.href = "dashboard.html";  
+          }, 1000);  
+        } else {  
+          status.style.color = 'red';  
+          status.innerText = 'كلمة المرور غير صحيحة ❌';  
+        }  
+      } catch (e) {  
+        status.style.color = 'red';  
+        status.innerText = 'حدث خطأ في الاتصال.';  
+      }  
+    }  
+  </script>  
+</body>  
 </html>
